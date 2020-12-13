@@ -1,0 +1,30 @@
+.grid{
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.item{
+	padding: 3rem;
+	background: #fff ;
+	border: 1px solid #333;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+.item:first-child{
+	/*grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	
+	there is a more shorter way to these things*/
+	grid-column: 1 /span 3;
+	grid-row: 1 /span 3;  /* same as the privious one start from specific column or row and span till items no 3*/
+
+
+
+	/* Spanning the middle element or item*/
+}
+.item:nth-child(10){
+	grid-column:2 /span 3 ;
+	grid-row: 5 / span 2;
+}
