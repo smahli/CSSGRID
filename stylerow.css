@@ -1,0 +1,14 @@
+.item{
+	padding: 3rem;
+	background: #f4f4f4;
+	border: #333 1px solid;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);  /* by adding this We can split items both ways */
+	grid-template-rows: 1fr 2fr 3fr;   /* Implicit grid*/
+	grid-auto-rows: 3fr;  /* Rest of them(which didn't mention in above line) are 3fr */
+}
