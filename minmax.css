@@ -1,0 +1,12 @@
+.item{
+	padding: 3rem;
+	background: #fff ;
+	border: 1px solid #333;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
